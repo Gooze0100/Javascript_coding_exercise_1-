@@ -10,9 +10,6 @@ function requestInput(msg) {
     rl.question(msg, (array) => {
       const arr = [];
       for (const value of array) {
-        // if (/\s/.test(array)) {
-        //   console.log("contain");
-        // }
         if (value.indexOf(" ") < 0) {
           if (value.indexOf(",") < 0) {
             if (/\d/.test(value)) {
